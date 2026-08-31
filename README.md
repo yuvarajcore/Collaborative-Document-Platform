@@ -76,7 +76,7 @@ Use this body for the demo:
 }
 ```
 
-Then show that the transaction rolled back: the failed workspace does not exist and no owner member was persisted. The server console will show the 409 request and middleware log.
+Then GET the workspace by the ID you would have received: there is no ID because the entire transaction rolled back. The server console will show the 409 request.
 
 ### Document transaction + versioning
 Document create/update wraps the document save and `DocumentVersion` creation in `transaction.atomic()`. Each save creates the next per-document version using `document.versions.count() + 1`.
