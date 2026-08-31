@@ -89,42 +89,4 @@ Every request prints:
 ### Signal audit logging
 `post_save` on `Document` creates an `AuditLog` with actor, action, model name and object ID. Updating a document therefore creates an `updated` audit entry visible from the Audit Logs endpoint.
 
-## 6. Demo video
 
-**Demo video:** `ADD_LOOM_OR_GOOGLE_DRIVE_LINK_HERE`
-
-Upload the 5–10 minute screen recording with audio, then replace the placeholder above with the shareable Loom or Google Drive link before submitting.
-
-## 7. Submission checklist
-
-- [ ] Public GitHub repository
-- [ ] Full source code
-- [ ] `.env.example` committed; real `.env` excluded
-- [ ] Pinned `requirements.txt`
-- [ ] Migration committed
-- [ ] README committed
-- [ ] `CollabDocs_Postman_Collection.json` in repository root
-- [ ] Postman collection contains all 17 endpoints
-- [ ] Sample bodies for every POST/PUT
-- [ ] Folders: Users, Workspaces, Documents, Comments, Tags, Audit Logs
-- [ ] All 17 requests tested successfully
-- [ ] 5–10 minute screen recording with audio
-- [ ] Demo shows rollback on failure
-- [ ] Demo shows middleware logs
-- [ ] Demo shows an aggregation endpoint
-- [ ] Demo shows AuditLog created by the signal after document update
-- [ ] Upload demo video to Loom or Google Drive
-- [ ] Add video link to this README before final GitHub submission
-
-## 8. GitHub
-
-```powershell
-git init
-git add .
-git commit -m "Complete CollabDocs assignment"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-git push -u origin main
-```
-
-Make the GitHub repository **Public** before submitting.
